@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Platform 9 3/4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+     <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <!-- moment.js link -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+</head>
+
+<body>
+        <div class="container">
+        <div class="jumbotron jumbotron-fluid" id="headerimage">
+            <div class="container">
+            <h1 class="display-4">Wizarding World</h1>
+            <p class="lead">Train Schedule</p>
+            <h3>Current Time: <span id="current-time"></div></h3>
+            </div>
+        </div>
+        </div>
+        <div id="table">
+        <table class="table table-striped">
+             <h1 class="trainHead" >Train Schedule</h1>
+                <thead>
+                  <tr>
+                    <!-- <th scope="col"></th> -->
+                    <!-- <th class="trainHead" scope="col">Train Schedule</th> -->
+                    <!-- <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th> -->
+                  </tr> 
+                </thead>
+                  <tr>
+                    <th scope="row">Train Name</th>
+                    <td>Destination</td>
+                    <td>Frequency (mins)</td>
+                    <td>Next Arrival</td>
+                    <td>Mintues Away</td>
+                  </tr>
+                 
+                     <tbody id="tbody">
+
+                     </tbody>
+            </table>
+        </div>
+    </div>
+    
+                  <div class="card">
+                      <h3 class="card-title">Add Train</h3>
+                  <form>
+                        <div class="form-group">
+                          <label for="trainName">Train Name</label>
+                          <input type="train" class="form-control" id="train-input" aria-describedby="trainName" placeholder="Enter Train Name">
+                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                          <label for="destination">Destination</label>
+                          <input type="destination" class="form-control" id="destination-input" placeholder="Enter Destination">
+                        </div>
+                        <div class="form-group">
+                                <label for="trainTime">First Train Time</label>
+                                <input type="time" class="form-control" id="time-input" placeholder="Enter Train Time">
+                              </div>
+                         <div class="form-group">
+                                <label for="frequency">Frequency (mins)</label>
+                                <input type="frequency" class="form-control" id="frequency-input" placeholder="Enter Frequency">
+                            </div>
+                    
+                        <button type="submit" id="add-train" class="btn btn-primary">Submit</button>
+                      </form>
+
+                      </div>
+                </tbody>
+              </table>
+
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  -->
+    <!-- integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+            
+    <script src="assets/javascript/app.js"></script>
+
+
+    </body>
+</html>
